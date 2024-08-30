@@ -8,35 +8,91 @@
 <body>
     <h1>Powerlifting Weakness Calculator</h1>
     <p>Enter information about site here</p>
-    <input type="radio" id="male" name="gender" value="male">
-    <label for="male">Male</label>
+    <form action=""> <!--need info-->
+        <section>
+            <fieldset>
+                <legend>Personal details</legend>
+                <ul> 
+                    <li>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </li>
+                    <li>
+                        <label for="weight">Weight:</label>
+                        <input type="number" id="weight" name="weight" value="weight" placeholder="kgs">
+                    </li>
+                </ul>
+            </fieldset>
+        </section>
 
-    <input type="radio" id="female" name="gender" value="female">
-    <label for="female">Female</label><br>
+        <section>
+            <fieldset>
+                <legend>Division</legend> <!--Alex - what do you call this?-->
+                <ul>
+                    <li>
+                        <input type="radio" id="raw" name="category" value="raw">
+                        <label for="raw">Raw</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="wraps" name="category" value="wraps">
+                        <label for="wraps">Wraps</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="singlePly" name="category" value="singlePly">
+                        <label for="singlePly">Single ply</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="multiPly" name="category" value="multiPly">
+                        <label for="multiPly">Multi ply</label>
+                    </li>
+                </ul>
+            </fieldset>
+        </section>
 
-    <input type="number" id="height" name="height" value="height">
-    <label for="height">Height</label>
-
-    <input type="number" id="weight" name="weight" value="weight">
-    <label for="weight">Weight</label><br>
-
-    <input type="radio" id="equipped" name="category" value="equipped">
-    <label for="equipped">Equipped</label>
-
-    <input type="radio" id="raw" name="category" value="raw">
-    <label for="raw">Raw</label><br>
-
-    <p>Enter best result for each lift</p>
-    <input type="number" id="squat" name="lift" value="squat">
-    <label for="squat">Squat</label><br>
-
-    <input type="number" id="bench" name="lift" value="bench">
-    <label for="bench">Bench</label><br>
-
-    <input type="number" id="deads" name="lift" value="deads">
-    <label for="deads">Deadlift</label><br>
-
-    
+        <section>
+            <fieldset>
+                <legend>Current personal best</legend>
+                <ul>
+                    <li>
+                        <label for="squat">Squat:</label>
+                        <input type="number" id="squat" name="lift" value="squat">
+                    </li>
+                    <li>
+                        <label for="bench">Bench:</label>
+                        <input type="number" id="bench" name="lift" value="bench">
+                    </li>
+                    <li>
+                        <label for="deads">Deadlift:</label>
+                        <input type="number" id="deads" name="lift" value="deads">
+                    </li>
+                </ul>
+            </fieldset>
+        </section>
+        
+        <section>
+            <fieldset>
+                <legend>Federations</legend>
+                <ul>
+                    <li>
+                        <input type="radio" id="allFeds" name="feds" value="allFeds">
+                        <label for="allFeds">All feds</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="testFeds" name="feds" value="testFeds">
+                        <label for="testFeds">Tested feds</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="fullTestFeds" name="feds" value="fullTestFeds">
+                        <label for="fullTestFeds">Fully tested feds</label>
+                    </li>
+                </ul>
+            </fieldset>
+        </section>
+    </form>
 
 </body>
 </html>
